@@ -3,16 +3,20 @@ import WorkExperience from "../experience.json";
 import "./WorkAccordion.scss";
 
 const WorkAccordion = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndexes, setOpenIndexes] = useState([]);
 
   const toggleItem = (index) => {
-    setOpenIndex((currentIndex) => (currentIndex === index ? null : index));
+    setOpenIndexes((currentIndexes) =>
+      currentIndexes.includes(index)
+        ? currentIndexes.filter((item) => item !== index)
+        : [...currentIndexes, index]
+    );
   };
 
   return (
     <div className="WorkAccordion">
       {WorkExperience?.map((work, index) => {
-        const isOpen = openIndex === index;
+        const isOpen = openIndexes.includes(index);
 
         return (
           <div

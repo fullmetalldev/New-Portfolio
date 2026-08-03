@@ -1,0 +1,39 @@
+.ProjectCard {
+  padding: 30px;
+  background: var(--primary-opacity-white);
+  border-radius: 30px;
+  &__title {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  &__content {
+    display: flex;
+    &_image {
+      width: 50%;
+      overflow: hidden;
+      border-radius: 15px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &_skills {
+      width: 50%;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 10px;
+      .Skill {
+        border: none;
+        background: var(--primary-opacity-white);
+        .Dot {
+          display: none;
+        }
+      }
+      .Skill:hover {
+        background: var(--primary-red);
+      }
+    }
+  }
+}
