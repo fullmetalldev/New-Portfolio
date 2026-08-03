@@ -1,0 +1,45 @@
+.button {
+  padding: 20px 24px;
+  font-size: var(--font-size-text);
+  border-radius: 100px;
+  cursor: pointer;
+  color: var(--primary-white);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  svg {
+    path {
+      stroke: var(--primary-white);
+    }
+  }
+}
+.primaryBtn {
+  background: var(--primary-red);
+}
+.secondaryBtn {
+  background: var(--primary-black);
+}
+.outlined {
+  background: none;
+}
+.secondaryBtn.outlined {
+  border: 1px solid var(--primary-black);
+  color: var(--primary-black);
+  svg {
+    path {
+      stroke: var(--primary-black);
+    }
+  }
+}
+
+.primaryBtn.outlined {
+  border: 1px solid var(--primary-red);
+  color: var(--primary-red);
+  svg {
+    path {
+      stroke: var(--primary-red);
+    }
+  }
+}

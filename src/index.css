@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Google Sans Flex", sans-serif;
+  --primary-black: #1e1e1e;
+  --secondary-black: #353535;
+  --font-size-text-small: 14px;
+  --font-size-text: 16px;
+  --font-size-text-med: 20px;
+  --font-size-logo: 26px;
+  --font-size-head1: 60px;
+  --font-size-head2: 36px;
+  --font-size-head3: 22px;
+  --primary-red: #e41830;
+  --primary-red-opacity: #e4183033;
+  --primary-white: #ffffff;
+  --primary-grey: #787878;
+  --primary-opacity-white: #bcbcbc33;
+}
+
+.container {
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+/* Colors */
+.text-black {
+  color: var(--primary-black);
+}
+.text-black2 {
+  color: var(--secondary-black);
+}
+
+.text-red {
+  color: var(--primary-red);
+}
+
+.text-white {
+  color: var(--primary-white);
+}
+
+.text-grey {
+  color: var(--primary-grey);
+}
+
+.bg-black {
+  background-color: var(--primary-black);
+}
+
+.bg-red {
+  background-color: var(--primary-red);
+}
+
+.bg-red-opacity {
+  background-color: var(--primary-red-opacity);
+}
+
+.bg-white {
+  background-color: var(--primary-white);
+}
+
+.bg-white-opacity {
+  background-color: var(--primary-opacity-white);
+}
+
+/* Font sizes */
+.text-small {
+  font-size: var(--font-size-text-small);
+}
+
+.text-medium {
+  font-size: var(--font-size-text-med);
+}
+
+.text-base {
+  font-size: var(--font-size-text);
+}
+
+.text-logo {
+  font-size: var(--font-size-logo);
+}
+
+.heading-1 {
+  font-size: var(--font-size-head1);
+}
+
+.heading-2 {
+  font-size: var(--font-size-head2);
+}
+
+.heading-3 {
+  font-size: var(--font-size-head3);
+}
+
+/* Optional typography helpers */
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.opacity-red {
+  color: var(--primary-red-opacity);
+}
+
+.opacity-white {
+  color: var(--primary-opacity-white);
+}
