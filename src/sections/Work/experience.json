@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Wells Fargo",
+    "title": "Software Engineer III",
+    "present": true,
+    "from": "Mar 2024",
+    "to": "Present",
+    "location": "San Francisco Bay Area, CA",
+    "description": "Contributed to the Auto Loans platform by integrating microservices APIs with existing legacy systems, ensuring seamless interoperability. - Participated in modernization initiatives, refactoring and migrating legacy code to scalable, maintainable architectures. - Produced and refined technical documentation, transforming complex legacy implementations into clear, developer-friendly resources."
+  },
+  {
+    "name": "Edgu Bilig",
+    "title": "Lead Frontend Developer",
+    "from": "June 2024",
+    "to": "Mar 2026",
+    "location": "Houston, TX",
+    "description": "Developed the user interface for the website and an admin panel for content management. - Used TypeScript for data typing and Next.js for SEO optimization. - Integrated Basehub CMS to enable non-technical content management."
+  },
+  {
+    "name": "Qomek",
+    "title": "Frontend Web Developer",
+    "from": "Nov 2022",
+    "to": "Aug 2023",
+    "location": "Almaty, Kazakhstan",
+    "description": "- Full-cycle development of the medical web application using React, Redux, and TypeScript. - Developed an admin panel for managing support processes and analyzing statistics (number of users, medical service orders). - Implemented a user-friendly interface for handling requests, streamlining moderation, and updating platform content."
+  },
+  {
+    "name": "Fortylines",
+    "title": "Software Engineer",
+    "from": "May 2022",
+    "to": "Nov 2022",
+    "location": "Bishkek, Kyrgyzstan",
+    "description": "Developed, enhanced, and maintained a core financial project with complex calculations for a Swiss bank. Built new web applications using React to meet diverse client requirements."
+  }
+]

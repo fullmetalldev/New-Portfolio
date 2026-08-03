@@ -1,4 +1,5 @@
 import "./work.scss";
+import WorkAccordion from "./WorkAccordion/WorkAccordion";
 
 const Work = () => {
   return (
@@ -15,15 +16,15 @@ const Work = () => {
             </h2>
             <span className="Work__content_description text-grey">
               Over the past few years, I’ve contributed to a range of digital
-              products, from enterprise platforms to startup applications.
-              My focus has always been on building clean, maintainable, and
+              products, from enterprise platforms to startup applications. My
+              focus has always been on building clean, maintainable, and
               high-performance interfaces that deliver a great user experience.
             </span>
           </div>
-        </div>
 
-        <div className="Work__content_right">
-
+          <div className="Work__content_right">
+            <WorkAccordion />
+          </div>
         </div>
       </div>
     </section>
