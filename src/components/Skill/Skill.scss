@@ -8,10 +8,38 @@
   gap: 7px;
   background: none;
   color: var(--primary-black);
+  transition: 0.3s ease;
+  svg {
+    transition: 0.3s ease;
+    width: 18px;
+    height: 18px;
+  }
+
   .Dot {
+    transition: 0.3s ease;
     width: 6px;
     height: 6px;
     border-radius: 50%;
     background-color: var(--primary-red);
+  }
+}
+
+.Skill:hover {
+  transition: 0.3s ease;
+  cursor: pointer;
+  scale: 1.05;
+  background: var(--primary-red);
+  color: var(--primary-white);
+  border: 1px solid var(--primary-white);
+  .Dot {
+    transition: 0.3s ease;
+    background-color: var(--primary-white);
+  }
+  svg {
+    path {
+      transition: 0.3s ease;
+      stroke: var(--primary-white);
+      fill: var(--primary-white);
+    }
   }
 }

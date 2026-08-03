@@ -1,11 +1,19 @@
 import "./Skill.scss";
 
 const Skill = ({ text, icon }) => {
+  const renderIcon = () => {
+    if (!icon) {
+      return <div className="Dot" />;
+    }
+    return icon();
+  };
+
   return (
     <button className="Skill">
-      {icon ? icon : <div className="Dot" />}
+      {renderIcon()}
       <span>{text}</span>
     </button>
   );
 };
+
 export default Skill;
