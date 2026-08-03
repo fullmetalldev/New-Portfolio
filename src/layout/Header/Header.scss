@@ -1,4 +1,5 @@
 .header {
+  z-index: 15;
   position: sticky;
   left: 0;
   top: 0;
@@ -8,6 +9,7 @@
     align-items: center;
     justify-content: space-between;
     &_logo {
+      padding: 10px 20px;
       font-size: var(--font-size-logo);
     }
     &_navbar {
@@ -16,9 +18,16 @@
       text-decoration: none;
       list-style-type: none;
       gap: 50px;
-      border-radius: 40px;
-      background: var(--primary-opacity-white);
       padding: 20px;
     }
   }
+}
+
+.glass-effect {
+  border-radius: 40px;
+
+  background: var(--primary-opacity-white);
+  backdrop-filter: blur(2px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 2rem;
 }

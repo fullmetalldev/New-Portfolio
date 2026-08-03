@@ -29,6 +29,7 @@
 .text-black {
   color: var(--primary-black);
 }
+
 .text-black2 {
   color: var(--secondary-black);
 }

@@ -13,8 +13,8 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="header__content">
-          <h2 className="header__content_logo">.Erbol</h2>
-          <ul className="header__content_navbar">
+          <h2 className="header__content_logo glass-effect">.Erbol</h2>
+          <ul className="header__content_navbar glass-effect">
             {NavLinks.map((link) => ( 
               <li>{link.title}</li>
             ))}

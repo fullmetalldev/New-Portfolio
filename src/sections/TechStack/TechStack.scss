@@ -1,0 +1,9 @@
+.TechStack {
+  margin-top: 100px;
+  &__content {
+    &_subtitle {
+      text-transform: uppercase;
+      color: var(--primary-red);
+    }
+  }
+}
