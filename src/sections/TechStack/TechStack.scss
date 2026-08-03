@@ -1,6 +1,6 @@
 .TechStack {
-  margin-top: 100px;
   &__content {
+    padding: 100px 0;
     &_technologies {
       display: flex;
       flex-flow: row wrap;
@@ -18,10 +18,6 @@
           flex-flow: row wrap;
         }
       }
-    }
-    &_subtitle {
-      text-transform: uppercase;
-      color: var(--primary-red);
     }
   }
 }

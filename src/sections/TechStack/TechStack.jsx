@@ -7,7 +7,7 @@ const TechStack = () => {
     <section className="TechStack">
       <div className="container">
         <div className="TechStack__content">
-          <h4 className="TechStack__content_subtitle text-medium font-normal">
+          <h4 className="TechStack__content_subtitle section-subtitle text-medium font-normal">
             Skills
           </h4>
           <h2 className="heading-1 font-normal">Technical stack</h2>

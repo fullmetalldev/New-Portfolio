@@ -9,7 +9,7 @@
   --font-size-text: 16px;
   --font-size-text-med: 20px;
   --font-size-logo: 26px;
-  --font-size-head1: 60px; 
+  --font-size-head1: 60px;
   --font-size-head2: 36px;
   --font-size-head3: 22px;
   --primary-red: #e41830;
@@ -17,6 +17,11 @@
   --primary-white: #ffffff;
   --primary-grey: #787878;
   --primary-opacity-white: #bcbcbc33;
+}
+
+.section-subtitle {
+  text-transform: uppercase;
+  color: var(--primary-red);
 }
 
 .container {
