@@ -3,6 +3,7 @@
   padding: 80px 0;
   &__content {
     display: flex;
+    gap: 20px;
     &_rights {
       margin-top: 100px;
     }
@@ -59,6 +60,17 @@
         textarea {
         }
       }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .Contacts__content {
+    flex-direction: column;
+    gap: 50px;
+    &_left,
+    &_right {
+      width: 100%;
     }
   }
 }

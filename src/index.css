@@ -142,3 +142,21 @@ body {
 .opacity-white {
   color: var(--primary-opacity-white);
 }
+
+h3,
+p {
+  -webkit-text-stroke: 0.5px var(--primary-opacity-white);
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1300px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 530px) {
+  .container {
+    padding: 0 15px;
+  }
+}

@@ -24,3 +24,15 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .Work__content {
+    flex-direction: column;
+    &_left {
+      width: 100%;
+    }
+    &_right {
+      width: 100%;
+    }
+  }
+}

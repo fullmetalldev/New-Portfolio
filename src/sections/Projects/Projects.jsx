@@ -24,7 +24,7 @@ const Projects = () => {
 
             <Swiper
               grabCursor={true}
-              slidesPerView={2}
+              slidesPerView={'auto'}
               spaceBetween={50}
               pagination={true}
               modules={[Pagination]}

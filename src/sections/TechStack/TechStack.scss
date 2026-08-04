@@ -27,3 +27,11 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .TechStack__content_technologies {
+    &-block {
+      width: 100%;
+    }
+  }
+}
