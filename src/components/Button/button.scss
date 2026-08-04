@@ -9,17 +9,37 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(30, 30, 30, 0.16);
+    outline: none;
+  }
+
   svg {
     path {
       stroke: var(--primary-white);
+      transition: stroke 0.2s ease;
     }
   }
 }
 .primaryBtn {
   background: var(--primary-red);
+
+  &:hover,
+  &:focus-visible {
+    background: #c2142a;
+  }
 }
 .secondaryBtn {
   background: var(--primary-black);
+
+  &:hover,
+  &:focus-visible {
+    background: #2b2b2b;
+  }
 }
 .outlined {
   background: none;
@@ -27,6 +47,12 @@
 .secondaryBtn.outlined {
   border: 1px solid var(--primary-black);
   color: var(--primary-black);
+
+  &:hover,
+  &:focus-visible {
+    background: rgba(30, 30, 30, 0.06);
+  }
+
   svg {
     path {
       stroke: var(--primary-black);
@@ -37,6 +63,12 @@
 .primaryBtn.outlined {
   border: 1px solid var(--primary-red);
   color: var(--primary-red);
+
+  &:hover,
+  &:focus-visible {
+    background: rgba(228, 24, 48, 0.08);
+  }
+
   svg {
     path {
       stroke: var(--primary-red);

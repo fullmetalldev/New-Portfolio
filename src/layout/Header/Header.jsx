@@ -15,10 +15,14 @@ const Header = () => {
       <Slide fraction={0.5} duration={1000} direction="down" triggerOnce>
         <div className="container">
           <div className="header__content">
-            <h2 className="header__content_logo glass-effect">.Erbol</h2>
+            <h2 className="header__content_logo glass-effect">
+              <a href={"#Main"}> .Erbol</a>
+            </h2>
             <ul className="header__content_navbar glass-effect">
               {NavLinks.map((link) => (
-                <li>{link.title}</li>
+                <li>
+                  <a href={link.link}>{link.title}</a>
+                </li>
               ))}
             </ul>
             <Button

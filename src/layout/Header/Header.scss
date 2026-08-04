@@ -11,6 +11,10 @@
     &_logo {
       padding: 10px 20px;
       font-size: var(--font-size-logo);
+      a {
+        color: var(--primary-black);
+        text-decoration: none;
+      }
     }
     &_navbar {
       align-items: center;
@@ -19,6 +23,23 @@
       list-style-type: none;
       gap: 50px;
       padding: 20px;
+      li {
+        cursor: pointer;
+        a {
+          color: var(--primary-black);
+          text-decoration: none;
+          background: none;
+          transition: 0.3s ease;
+        }
+        a:focus,
+        a:hover,
+        a:active {
+          outline: none;
+          color: var(--primary-red);
+          transition: 0.3s ease;
+          font-weight: bold;
+        }
+      }
     }
   }
 }

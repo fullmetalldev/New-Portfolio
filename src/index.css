@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Google Sans Flex", sans-serif;
+  scroll-behavior: smooth;
   --primary-black: #1e1e1e;
   --secondary-black: #353535;
   --font-size-text-small: 14px;
@@ -26,6 +27,23 @@ body {
 .section-subtitle {
   text-transform: uppercase;
   color: var(--primary-red);
+}
+
+.heading-1:hover,
+.heading-2:hover,
+.heading-3:hover,
+.text-logo:hover,
+.section-subtitle:hover {
+  font-weight: bolder;
+  transition: 0.3s;
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.text-logo,
+.section-subtitle {
+  transition: 0.3s;
 }
 
 .container {

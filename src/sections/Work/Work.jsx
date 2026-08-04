@@ -4,7 +4,7 @@ import { Slide } from "react-awesome-reveal";
 
 const Work = () => {
   return (
-    <section className="Work">
+    <section id="Experience" className="Work">
       <Slide fraction={0.5} duration={1000} direction="up" triggerOnce>
         <div className="container">
           <div className="Work__content">

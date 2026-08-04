@@ -4,7 +4,7 @@ import { Slide } from "react-awesome-reveal";
 
 const Contacts = () => {
   return (
-    <section className="Contacts">
+    <section id="Contacts" className="Contacts">
       <Slide fraction={0.5} duration={1000} direction="up" triggerOnce>
         <div className="container">
           <div className="Contacts__content">

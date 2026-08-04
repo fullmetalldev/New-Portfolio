@@ -8,6 +8,7 @@ import Contacts from "./sections/Contacts/Contacts";
 function App() {
   return (
     <>
+      <div id="Main" />
       <Header />
       <main>
         <About />

@@ -5,7 +5,7 @@ import { Slide } from "react-awesome-reveal";
 
 const TechStack = () => {
   return (
-    <section className="TechStack">
+    <section id="Skills" className="TechStack">
       <Slide fraction={0.5} duration={1000} direction="up" triggerOnce>
         <div className="container">
           <div className="TechStack__content">

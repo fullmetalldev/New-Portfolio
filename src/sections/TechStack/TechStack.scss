@@ -10,6 +10,8 @@
         border-radius: 40px;
         background: var(--primary-opacity-white);
         width: calc(50% - 10px);
+        transition: 0.3s ease;
+        border: 1px solid transparent;
         padding: 40px;
         &-skills {
           margin-top: 15px;
@@ -17,6 +19,10 @@
           gap: 5px;
           flex-flow: row wrap;
         }
+      }
+      &-block:hover {
+        border: 1px solid var(--primary-red);
+        transition: 0.3s ease;
       }
     }
   }
