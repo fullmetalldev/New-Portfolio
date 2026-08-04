@@ -2,6 +2,7 @@ import Button from "../../components/Button/Button";
 import "./Header.scss";
 import { Slide } from "react-awesome-reveal";
 
+
 const Header = () => {
   const NavLinks = [
     { title: "Skills", link: "#Skills" },
@@ -20,7 +21,7 @@ const Header = () => {
             </h2>
             <ul className="header__content_navbar glass-effect">
               {NavLinks.map((link) => (
-                <li>
+                <li key={link.link}>
                   <a href={link.link}>{link.title}</a>
                 </li>
               ))}

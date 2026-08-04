@@ -1,11 +1,12 @@
 import "./Contacts.scss";
 import Button from "../../components/Button/Button";
 import { Slide } from "react-awesome-reveal";
+import { isMobile } from "../../utils";
 
 const Contacts = () => {
   return (
     <section id="Contacts" className="Contacts">
-      <Slide fraction={0.5} duration={1000} direction="up" triggerOnce>
+      <Slide fraction={0.5} duration={1000} direction={isMobile() ? `left` : 'up'} triggerOnce>
         <div className="container">
           <div className="Contacts__content">
             <div className="Contacts__content_left">

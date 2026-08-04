@@ -3,24 +3,25 @@ import Skill from "../../components/Skill/Skill";
 import Button from "../../components/Button/Button";
 import Hero from "../../assets/hero.png";
 import { Slide } from "react-awesome-reveal";
+import { isMobile } from "../../utils";
 
 const About = () => {
   const fields = ["Banking", "Healthcare", "Fintech"];
 
   return (
     <section className="About">
-      <Slide fraction={0.5} duration={1000} direction="up" triggerOnce>
+      <Slide fraction={isMobile() ? 0.1 : 0.5} duration={1000} direction={isMobile() ? `left` : 'up'} triggerOnce>
         <div className="container">
           <div className="About__content">
             <div className="About__content_left">
               <h1 className="About__content_left-heading heading-1 font-normal">
                 Software Engineer
-                <p className="text-grey"> & Developer</p>
+                <span className="text-grey"> & Developer</span>
               </h1>
-              <p className="About__content_left-subHeading text-black2 text-medium">
+              <div className="About__content_left-subHeading text-black2 text-medium">
                 <p>Front-end specialist with 4+ years building</p>
                 <p>high-performance web apps.</p>
-              </p>
+              </div>
               <div className="About__content_left-fields">
                 {fields?.map((field, idx) => (
                   <Skill key={idx} text={field} />
@@ -56,11 +57,11 @@ const About = () => {
                 </div>
 
                 <div className="About__content_right-info-column">
-                  <h3>
-                    <p className="text-small">San Fransicso</p>
-                    <p className="text-small">Bay Area</p>
-                  </h3>
-                  <p className="text-small">Open to remote &</p>
+                  <div>
+                    <p className="text-small font-bold">San Fransicso</p>
+                    <p className="text-small font-bold">Bay Area</p>
+                  </div>
+                  <p className="text-small ">Open to remote &</p>
                   <p className="text-small">Hybrid roles</p>
                 </div>
               </div>

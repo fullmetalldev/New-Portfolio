@@ -8,11 +8,12 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import { Slide } from "react-awesome-reveal";
+import { isMobile } from "../../utils";
 
 const Projects = () => {
   return (
     <section id="Projects" className="Projects">
-      <Slide fraction={0.5} duration={1000} direction="up" triggerOnce>
+      <Slide fraction={isMobile() ? 0.1 : 0.5} duration={1000} direction={isMobile() ? `left` : 'up'} triggerOnce>
         <div className="container">
           <div className="Projects__content">
             <h4 className="Projects__content_subtitle section-subtitle text-medium font-normal">

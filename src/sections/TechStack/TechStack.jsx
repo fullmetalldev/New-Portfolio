@@ -1,4 +1,5 @@
 import Skill from "../../components/Skill/Skill";
+import { isMobile } from "../../utils";
 import "./TechStack.scss";
 import Technologies from "./techs";
 import { Slide } from "react-awesome-reveal";
@@ -6,7 +7,7 @@ import { Slide } from "react-awesome-reveal";
 const TechStack = () => {
   return (
     <section id="Skills" className="TechStack">
-      <Slide fraction={0.5} duration={1000} direction="up" triggerOnce>
+      <Slide fraction={isMobile() ? 0.1 : 0.5} duration={1000} direction={isMobile() ? `left` : 'up'} triggerOnce>
         <div className="container">
           <div className="TechStack__content">
             <h4 className="TechStack__content_subtitle section-subtitle text-medium font-normal">
@@ -22,7 +23,7 @@ const TechStack = () => {
                   <Slide
                     fraction={0.5}
                     duration={1000}
-                    direction="up"
+                    direction={isMobile() ? `left` : 'up'}
                     triggerOnce
                   >
                     <h3 className="heading-2 font-normal">

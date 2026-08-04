@@ -1,3 +1,4 @@
+import { isMobile } from "../../utils";
 import "./work.scss";
 import WorkAccordion from "./WorkAccordion/WorkAccordion";
 import { Slide } from "react-awesome-reveal";
@@ -5,7 +6,7 @@ import { Slide } from "react-awesome-reveal";
 const Work = () => {
   return (
     <section id="Experience" className="Work">
-      <Slide fraction={0.5} duration={1000} direction="up" triggerOnce>
+      <Slide fraction={isMobile() ? 0.1 : 0.5} duration={1000} direction={isMobile() ? `left` : 'up'} triggerOnce>
         <div className="container">
           <div className="Work__content">
             <div className="Work__content_left">

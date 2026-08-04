@@ -26,9 +26,9 @@ const Button = ({ text, action, type, cls, outlined }) => {
           <path
             d="M8.3335 1L13.8335 6.5L8.3335 12M13.8335 6.5L1.00016 6.5"
             stroke="#1E1E1E"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       ) : (
