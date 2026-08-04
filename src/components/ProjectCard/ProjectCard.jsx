@@ -17,7 +17,12 @@ const ProjectCard = () => {
           <img src={Sample} />
         </div>
       </div>
-      <Button action={()=> null} outlined type="secondary" text="See my work" />
+      <Button
+        action={() => null}
+        outlined
+        type="secondary"
+        text="See my work"
+      />
     </div>
   );
 };

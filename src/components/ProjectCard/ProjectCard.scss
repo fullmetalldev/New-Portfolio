@@ -25,14 +25,16 @@
       flex-direction: column;
       gap: 10px;
       .Skill {
-        border: none;
-        background: var(--primary-opacity-white);
+        padding: 8px 15px;
+        box-shadow: 0 0 4px var(--primary-grey);
+        color: var(--primary-red);
         .Dot {
           display: none;
         }
       }
       .Skill:hover {
         background: var(--primary-red);
+        color: var(--primary-white);
       }
     }
   }

@@ -14,7 +14,7 @@ const Projects = () => {
       <div className="container">
         <div className="Projects__content">
           <h4 className="Projects__content_subtitle section-subtitle text-medium font-normal">
-            Experience
+            Projects
           </h4>
           <h2 className="Projects__content_title heading-1 font-normal">
             <p>Projects</p>
