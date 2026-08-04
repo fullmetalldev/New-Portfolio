@@ -4,6 +4,8 @@
   box-sizing: border-box;
   font-family: "Google Sans Flex", sans-serif;
   scroll-behavior: smooth;
+}
+:root {
   --primary-black: #1e1e1e;
   --secondary-black: #353535;
   --font-size-text-small: 14px;
@@ -156,6 +158,16 @@ p {
 }
 
 @media (max-width: 530px) {
+  :root {
+    --font-size-text-small: 12px;
+    --font-size-text: 14px;
+    --font-size-text-med: 18px;
+    --font-size-logo: 22px;
+    --font-size-head1: 40px;
+    --font-size-head2: 28px;
+    --font-size-head3: 20px;
+  }
+
   .container {
     padding: 0 15px;
   }
