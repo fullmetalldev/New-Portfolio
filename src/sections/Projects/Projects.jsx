@@ -9,11 +9,17 @@ import { Pagination } from "swiper/modules";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import { Slide } from "react-awesome-reveal";
 import { isMobile } from "../../utils";
+import { projectsList } from "./projectsList";
 
 const Projects = () => {
   return (
     <section id="Projects" className="Projects">
-      <Slide fraction={isMobile() ? 0.1 : 0.5} duration={1000} direction={isMobile() ? `left` : 'up'} triggerOnce>
+      <Slide
+        fraction={isMobile() ? 0.1 : 0.5}
+        duration={1000}
+        direction={isMobile() ? `left` : "up"}
+        triggerOnce
+      >
         <div className="container">
           <div className="Projects__content">
             <h4 className="Projects__content_subtitle section-subtitle text-medium font-normal">
@@ -25,21 +31,17 @@ const Projects = () => {
 
             <Swiper
               grabCursor={true}
-              slidesPerView={'auto'}
+              slidesPerView={isMobile ? 1 : 1.5}
               spaceBetween={50}
               pagination={true}
               modules={[Pagination]}
               className="mySwiper Projects__content_cards"
             >
-              <SwiperSlide>
-                <ProjectCard />
-              </SwiperSlide>
-              <SwiperSlide>
-                <ProjectCard />
-              </SwiperSlide>
-              <SwiperSlide>
-                <ProjectCard />
-              </SwiperSlide>
+              {projectsList?.map((project, idx) => (
+                <SwiperSlide key={project?.link}>
+                  <ProjectCard key={project?.link} data={project} idx={idx} />
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>
