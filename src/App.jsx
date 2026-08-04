@@ -1,4 +1,3 @@
-import "./App.css";
 import Header from "./layout/Header/Header";
 import About from "./sections/About/About";
 import TechStack from "./sections/TechStack/TechStack";

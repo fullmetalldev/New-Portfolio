@@ -4,9 +4,9 @@
     &_technologies {
       display: flex;
       flex-flow: row wrap;
+      margin-top: 40px;
       gap: 20px;
       &-block {
-        margin-top: 40px;
         border-radius: 40px;
         background: var(--primary-opacity-white);
         width: calc(50% - 10px);

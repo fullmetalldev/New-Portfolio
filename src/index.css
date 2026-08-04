@@ -19,6 +19,10 @@
   --primary-opacity-white: #bcbcbc33;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .section-subtitle {
   text-transform: uppercase;
   color: var(--primary-red);
