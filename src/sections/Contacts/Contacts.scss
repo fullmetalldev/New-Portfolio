@@ -21,9 +21,44 @@
       &-contacts {
         margin-top: 40px;
       }
+      &-description {
+        margin-top: 20px;
+      }
     }
     &_right {
       width: 50%;
+      &-form {
+        padding: 50px 40px;
+        border: 1px solid var(--primary-grey);
+        border-radius: 30px;
+        .button {
+          align-self: center;
+          justify-self: center;
+          margin-top: 30px;
+        }
+        &-title {
+          margin-bottom: 30px;
+        }
+      }
+      &-label {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        span {
+          margin-bottom: 10px;
+        }
+        input,
+        textarea {
+          font-size: var(--font-size-text);
+          padding: 16px 20px;
+          color: var(--primary-white);
+          border: 1px solid var(--primary-grey);
+          background: none;
+          border-radius: 10px;
+        }
+        textarea {
+        }
+      }
     }
   }
 }

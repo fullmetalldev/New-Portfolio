@@ -1,4 +1,5 @@
 import "./Contacts.scss";
+import Button from "../../components/Button/Button";
 
 const Contacts = () => {
   return (
@@ -14,8 +15,8 @@ const Contacts = () => {
             </h2>
 
             <span className="Contacts__content_left-description text-medium text-grey">
-              Whether it's a full-time role, contract, or an interesting project
-              — I'd love to hear from you
+              <p>Whether it's a full-time role, contract, or an interesting </p>
+              <p>project — I'd love to hear from you</p>
             </span>
 
             <div className="Contacts__content_left-contacts">
@@ -39,15 +40,34 @@ const Contacts = () => {
           </div>
 
           <div className="Contacts__content_right">
+            <form className="Contacts__content_right-form" action="">
+              <h3 className="Contacts__content_right-form-title heading-3 text-white">
+                Tell me about your project
+              </h3>
 
+              <label className="Contacts__content_right-label">
+                <span className="text-grey">Your name</span>
+                <input placeholder="Jane Smith" />
+              </label>
+
+              <label className="Contacts__content_right-label">
+                <span className="text-grey">Email</span>
+                <input placeholder="jane@example.com" />
+              </label>
+
+              <label className="Contacts__content_right-label">
+                <span className="text-grey">Email</span>
+                <textarea placeholder="jane@example.com" />
+              </label>
+
+              <Button text="Send message" action={() => null} />
+            </form>
           </div>
-
-         
         </div>
 
-         <p className="Contacts__content_rights text-grey text-medium">
-            © {new Date().getFullYear()} Erbol Nurekov. All rights reserved
-          </p>
+        <p className="Contacts__content_rights text-grey text-medium">
+          © {new Date().getFullYear()} Erbol Nurekov. All rights reserved
+        </p>
       </div>
     </section>
   );
