@@ -1,6 +1,6 @@
 import "./button.scss";
 
-const Button = ({ text, action, type, cls, outlined }) => {
+const Button = ({ text, action, type, cls, outlined, buttonType = "button", disabled = false }) => {
   const buttonClass = () => {
     switch (type) {
       case "secondary":
@@ -9,10 +9,13 @@ const Button = ({ text, action, type, cls, outlined }) => {
         return "primaryBtn";
     }
   };
+
   return (
     <button
+      type={buttonType}
       onClick={action}
       className={`button ${buttonClass()} ${cls ? cls : ""}${outlined ? "outlined" : ""}`}
+      disabled={disabled}
     >
       {text}
       {action ? (

@@ -57,11 +57,27 @@
           background: none;
           border-radius: 10px;
         }
+        input[aria-invalid="true"],
+        textarea[aria-invalid="true"] {
+          border-color: #ff6b6b;
+        }
         textarea {
         }
       }
     }
   }
+}
+
+.text-error {
+  color: #ff6b6b;
+  margin-top: 8px;
+  display: block;
+}
+
+.text-success {
+  color: #5ae39a;
+  margin-top: 8px;
+  display: block;
 }
 
 @media (max-width: 850px) {
