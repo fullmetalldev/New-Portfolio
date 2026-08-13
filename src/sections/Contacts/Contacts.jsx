@@ -6,7 +6,12 @@ import { isMobile } from "../../utils";
 const Contacts = () => {
   return (
     <section id="Contacts" className="Contacts">
-      <Slide fraction={0.5} duration={1000} direction={isMobile() ? `left` : 'up'} triggerOnce>
+      <Slide
+        fraction={0.5}
+        duration={1000}
+        direction={isMobile() ? `left` : "up"}
+        triggerOnce
+      >
         <div className="container">
           <div className="Contacts__content">
             <div className="Contacts__content_left">
@@ -30,17 +35,24 @@ const Contacts = () => {
                   <div className="Contacts__content_left-label text-grey text-medium">
                     Mail
                   </div>
-                  <span className="Contacts__content_left-item text-white">
+                  <a
+                    href="mailto:info@erbol.dev"
+                    className="Contacts__content_left-item text-white"
+                  >
                     info@erbol.dev
-                  </span>
+                  </a>
                 </div>
                 <div className="Contacts__content_left-contact">
                   <div className="Contacts__content_left-label text-grey text-medium">
                     Linkedin
                   </div>
-                  <span className="Contacts__content_left-item text-white">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/erbollldev/"
+                    className="Contacts__content_left-item text-white"
+                  >
                     linkedin.com/in/erbollldev
-                  </span>
+                  </a>
                 </div>
               </div>
             </div>

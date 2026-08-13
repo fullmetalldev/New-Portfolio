@@ -1,4 +1,5 @@
 import Button from "../../components/Button/Button";
+import { scrollToId } from "../../utils";
 import "./Header.scss";
 import { Slide } from "react-awesome-reveal";
 
@@ -27,6 +28,7 @@ const Header = () => {
               ))}
             </ul>
             <Button
+              action={()=> scrollToId("#Contacts")}
               type="secondary"
               cls={"header__content_button"}
               text={"Connect with me"}

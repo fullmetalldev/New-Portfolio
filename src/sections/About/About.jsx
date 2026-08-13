@@ -3,7 +3,7 @@ import Skill from "../../components/Skill/Skill";
 import Button from "../../components/Button/Button";
 import Hero from "../../assets/hero.png";
 import { Slide } from "react-awesome-reveal";
-import { isMobile } from "../../utils";
+import { isMobile, scrollToId } from "../../utils";
 
 const About = () => {
   const fields = ["Banking", "Healthcare", "Fintech"];
@@ -32,11 +32,11 @@ const About = () => {
               </p>
 
               <div className="About__content_left-actions">
-                <Button action={() => null} text="Get in touch" />
+                <Button action={() => scrollToId('#Contacts')} text="Get in touch" />
                 <Button
                   outlined
                   type={"secondary"}
-                  action={() => null}
+                  action={() => scrollToId('#Projects')}
                   text="Portfolio"
                 />
               </div>
