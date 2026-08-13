@@ -60,7 +60,7 @@ export const projectsList = [
     description:
       "Pet project and marketplace website in the USA for immigrants from Central Asia.",
     tech: ["React", "JavaScript", "Firebase", "NodeJS"],
-    link: "https://www.marketplace.qoomus.org/",
+    link: "https://qoomus.vercel.app",
     img: Qoomus,
   },
   {
