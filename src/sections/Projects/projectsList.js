@@ -35,7 +35,7 @@ export const projectsList = [
       "Vercel",
       "Git",
     ],
-    link: "https://qoomus.vercel.app",
+    link: "https://qomek.net",
     img: Qomek,
   },
   {
